@@ -39,7 +39,7 @@ def get_db():
 
 @app.get("/")
 def root():
-    return {"message": "Backend running 🚀"}
+    return {"message": "Backend running..."}
 
 @app.post("/upload")
 async def upload_files(files: List[UploadFile] = File(...), db: Session = Depends(get_db)):
